@@ -5,6 +5,8 @@ module fullAdder(Z, cout, A, B, cin);
 	output Z, cout;
 	
 	wire t1, t2, t3, t4;
+	
+//	assign {cout, Z} = A + B;
 
 	xor G1 (t1, A, B);
 	xor G2 (Z, t1, cin);
